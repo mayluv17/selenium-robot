@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on darwin)" generated="2024-03-14T12:40:55.533243" rpa="false" schemaversion="5">
+<suite id="s1" name="ForLoopDemo" source="/Users/mac/Documents/Dev/selenium-robot/Tests/ForLoopDemo.robot">
+<test id="s1-t1" name="Loop3" line="10">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-14T12:40:55.558540" level="TRACE">Arguments: [ '1 2 3 4 5 6 7 8' ]</msg>
+<msg time="2024-03-14T12:40:55.558664" level="TRACE">Return: ['1 2 3 4 5 6 7 8']</msg>
+<msg time="2024-03-14T12:40:55.558783" level="INFO">@{items} = [ 1 2 3 4 5 6 7 8 ]</msg>
+<var>@{items}</var>
+<arg>1 2 3 4 5 6 7 8</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-14T12:40:55.558421" elapsed="0.000390"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2024-03-14T12:40:55.559457" level="TRACE">Arguments: [ '1 2 3 4 5 6 7 8' ]</msg>
+<msg time="2024-03-14T12:40:55.559561" level="TRACE">Return: None</msg>
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-14T12:40:55.559324" elapsed="0.000282"/>
+</kw>
+<var name="${i}">1 2 3 4 5 6 7 8</var>
+<status status="PASS" start="2024-03-14T12:40:55.559223" elapsed="0.000428"/>
+</iter>
+<var>${i}</var>
+<value>@{items}</value>
+<status status="PASS" start="2024-03-14T12:40:55.558983" elapsed="0.000711"/>
+</for>
+<status status="PASS" start="2024-03-14T12:40:55.557743" elapsed="0.002116"/>
+</test>
+<test id="s1-t2" name="Loop4" line="15">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2024-03-14T12:40:55.560620" level="TRACE">Arguments: [ 'John' ]</msg>
+<msg time="2024-03-14T12:40:55.560703" level="TRACE">Return: None</msg>
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-14T12:40:55.560512" elapsed="0.000239"/>
+</kw>
+<var name="${name}">John</var>
+<status status="PASS" start="2024-03-14T12:40:55.560428" elapsed="0.000380"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2024-03-14T12:40:55.561066" level="TRACE">Arguments: [ 'Scott' ]</msg>
+<msg time="2024-03-14T12:40:55.561147" level="TRACE">Return: None</msg>
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-14T12:40:55.560977" elapsed="0.000205"/>
+</kw>
+<var name="${name}">Scott</var>
+<status status="PASS" start="2024-03-14T12:40:55.560906" elapsed="0.000331"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2024-03-14T12:40:55.561533" level="TRACE">Arguments: [ 'Doe' ]</msg>
+<msg time="2024-03-14T12:40:55.561608" level="TRACE">Return: None</msg>
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-03-14T12:40:55.561442" elapsed="0.000202"/>
+</kw>
+<var name="${name}">Doe</var>
+<status status="PASS" start="2024-03-14T12:40:55.561355" elapsed="0.000335"/>
+</iter>
+<var>${name}</var>
+<value>John</value>
+<value>Scott</value>
+<value>Doe</value>
+<status status="PASS" start="2024-03-14T12:40:55.560305" elapsed="0.001425"/>
+</for>
+<status status="PASS" start="2024-03-14T12:40:55.560083" elapsed="0.001802"/>
+</test>
+<status status="PASS" start="2024-03-14T12:40:55.535418" elapsed="0.026926"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="ForLoopDemo">ForLoopDemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
